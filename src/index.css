@@ -1,0 +1,83 @@
+:root {
+  --yellow: #ffd131;
+  --blue: #0078ff;
+  --bg: #ffffff;
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  --radius: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.selector-card {
+  background: var(--bg);
+  width: 320px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.page-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.page-row {
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.page-row input[type="checkbox"] {
+  accent-color: var(--blue);
+  width: 18px;
+  height: 18px;
+}
+
+.page-row:hover {
+  background: #f0f0f0;
+}
+
+.done-btn {
+  width: 100%;
+  background: var(--yellow);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.done-btn:hover {
+  background: #f2c400;
+}
